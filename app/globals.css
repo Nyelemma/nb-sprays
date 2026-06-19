@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0b;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  background-color: var(--bg);
+  color: #f7f8f9;
+  font-feature-settings: "ss01", "cv01";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c313a;
+  border-radius: 999px;
+  border: 2px solid #0a0a0b;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4e535a;
+}
+
+::selection {
+  background: rgba(199, 204, 209, 0.85);
+  color: #0a0a0b;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  /* Metallic silver text */
+  .text-metal {
+    @apply bg-silver-sheen bg-clip-text text-transparent;
+    background-size: 200% auto;
+  }
+
+  /* Glass panel */
+  .glass {
+    @apply border border-white/10 bg-white/[0.04] backdrop-blur-xl;
+  }
+  .glass-strong {
+    @apply border border-white/10 bg-ink-800/70 backdrop-blur-xl;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-medium uppercase tracking-widest2 text-silver-400;
+  }
+
+  .hairline {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-white/15 to-transparent;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 will-change-transform;
+  }
+  .btn-primary {
+    @apply bg-silver-100 text-ink-900 shadow-silver-glow hover:bg-white hover:-translate-y-0.5;
+  }
+  .btn-ghost {
+    @apply border border-white/20 bg-white/[0.03] text-silver-100 backdrop-blur hover:border-white/40 hover:bg-white/[0.08] hover:-translate-y-0.5;
+  }
+  .btn-whatsapp {
+    @apply bg-[#25D366] text-[#0a0a0b] hover:bg-[#1ebe5a] hover:-translate-y-0.5;
+  }
+
+  /* Section title */
+  .section-title {
+    @apply font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  }
+  /* subtle film grain overlay using layered gradients */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.9) 0.5px, transparent 0.5px);
+    background-size: 3px 3px;
+  }
+}
