@@ -42,9 +42,9 @@ export const nav = [
 /* ---------- HERO ---------- */
 export const hero = {
   // Swap this for your strongest full-bleed automotive shot.
-  image: "/images/hero/hero.png",
+  image: "/images/hero/hero.jpg",
   imageAlt:
-    "Freshly resprayed car bodywork with a flawless mirror finish in the NB Sprays workshop",
+    "Freshly resprayed glossy black vehicle panel with a flawless mirror finish at NB Sprays",
   headline: "Professional Vehicle Bodywork Specialists",
   subheadline: "Bringing damaged vehicles back to life across North West England.",
   primaryCta: { label: "Get a Quote", href: "#contact" },
@@ -61,8 +61,8 @@ export const about = {
     "Quality workmanship, honest advice and complete customer satisfaction sit at the heart of everything we do.",
   ],
   // Swap for a workshop / technician-at-work photo.
-  image: "/images/projects/about.png",
-  imageAlt: "NB Sprays technician carefully refinishing a vehicle panel",
+  image: "/images/projects/about.jpg",
+  imageAlt: "NB Sprays applying fresh paint to a masked vehicle panel during a repair",
 };
 
 /* ---------- SERVICES ---------- */
@@ -130,25 +130,25 @@ export type BeforeAfter = {
 
 export const beforeAfter: BeforeAfter[] = [
   {
-    title: "Rear Quarter Panel Respray",
-    before: "/images/before-after/project-1-before.png",
-    after: "/images/before-after/project-1-after.png",
-    beforeAlt: "Scratched and dented rear quarter panel before repair",
-    afterAlt: "Flawless resprayed rear quarter panel after repair",
+    title: "Rear Quarter & Arch Respray",
+    before: "/images/before-after/project-1-before.jpg",
+    after: "/images/before-after/project-1-after.jpg",
+    beforeAlt: "Scratched rear quarter panel above the wheel arch before repair",
+    afterAlt: "Freshly resprayed rear quarter panel with a flawless finish after repair",
   },
   {
-    title: "Front Bumper Accident Repair",
-    before: "/images/before-after/project-2-before.png",
-    after: "/images/before-after/project-2-after.png",
-    beforeAlt: "Cracked front bumper with collision damage before repair",
-    afterAlt: "Repaired and refinished front bumper after repair",
+    title: "Side Panel Accident Repair",
+    before: "/images/before-after/project-2-before.jpg",
+    after: "/images/before-after/project-2-after.jpg",
+    beforeAlt: "Damaged grey side panel masked up ready for repair",
+    afterAlt: "Repaired and refinished grey side panel after respraying",
   },
   {
-    title: "Full Bodywork Restoration",
-    before: "/images/before-after/project-3-before.png",
-    after: "/images/before-after/project-3-after.png",
-    beforeAlt: "Faded, damaged bodywork before restoration",
-    afterAlt: "Fully restored bodywork with showroom shine after restoration",
+    title: "Bumper Scuff & Scratch Repair",
+    before: "/images/before-after/project-3-before.jpg",
+    after: "/images/before-after/project-3-after.jpg",
+    beforeAlt: "Scuffed and scratched black bumper before repair",
+    afterAlt: "Smooth, glossy black bumper after a full refinish",
   },
 ];
 
@@ -156,14 +156,14 @@ export const beforeAfter: BeforeAfter[] = [
 export type GalleryItem = { src: string; alt: string; tall?: boolean };
 
 export const gallery: GalleryItem[] = [
-  { src: "/images/gallery/work-1.png", alt: "Glossy resprayed bonnet with mirror reflections", tall: true },
-  { src: "/images/gallery/work-2.png", alt: "Resprayed rear quarter panel mirror finish" },
-  { src: "/images/gallery/work-3.png", alt: "Polished alloy wheel and refinished panel" },
-  { src: "/images/gallery/work-4.png", alt: "Accident-damage front end fully repaired", tall: true },
-  { src: "/images/gallery/work-5.png", alt: "Fully restored vehicle in showroom condition" },
-  { src: "/images/gallery/work-6.png", alt: "Deep wet-look gloss after paint correction" },
-  { src: "/images/gallery/work-7.png", alt: "Premium silver bodywork under studio lighting", tall: true },
-  { src: "/images/gallery/work-8.png", alt: "Refinished side panel and alloy detail" },
+  { src: "/images/gallery/work-1.jpg", alt: "Freshly resprayed rear quarter panel in the spray booth", tall: true },
+  { src: "/images/gallery/work-2.jpg", alt: "Refinished grey BMW rear quarter panel" },
+  { src: "/images/gallery/work-3.jpg", alt: "Glossy black bumper after a full refinish" },
+  { src: "/images/gallery/work-4.jpg", alt: "Fresh paint being applied to a masked panel", tall: true },
+  { src: "/images/gallery/work-5.jpg", alt: "Mirror-finish glossy black panel after respraying" },
+  { src: "/images/gallery/work-6.jpg", alt: "Panel prepared and primed ready for paint" },
+  { src: "/images/gallery/work-7.jpg", alt: "Scratched wheel arch before repair", tall: true },
+  { src: "/images/gallery/work-8.jpg", alt: "Damaged side panel masked up for repair" },
 ];
 
 /* ---------- WHY CHOOSE US ---------- */

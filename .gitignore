@@ -25,4 +25,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw uploaded source images (the in-use copies live in public/images)
+/Images
 .vercel

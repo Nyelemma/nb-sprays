@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     locale: "en_GB",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "NB Sprays — vehicle bodywork and paint repair specialists",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: ["/og-image.png"],
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -75,7 +75,7 @@ const jsonLd = {
   name: business.name,
   description: DESCRIPTION,
   url: SITE_URL,
-  image: `${SITE_URL}/og-image.png`,
+  image: `${SITE_URL}/og-image.jpg`,
   telephone: "+447467457091",
   email: business.email,
   priceRange: "££",
