@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { about } from "@/lib/content";
-import CountUp from "./CountUp";
 import Reveal from "./Reveal";
 
 export default function About() {
@@ -21,15 +20,6 @@ export default function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink-950/60 to-transparent" />
             </div>
-            {/* Floating accent badge */}
-            <div className="glass-strong absolute -bottom-6 -right-2 hidden rounded-2xl px-6 py-5 shadow-glass sm:block">
-              <p className="font-display text-3xl font-bold text-metal">
-                <CountUp to={about.stats[0].value} suffix={about.stats[0].suffix} />
-              </p>
-              <p className="mt-1 text-xs uppercase tracking-wider text-silver-400">
-                {about.stats[0].label}
-              </p>
-            </div>
           </Reveal>
 
           {/* Copy */}
@@ -49,22 +39,6 @@ export default function About() {
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Stats row */}
-        <div className="mt-20 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/5 sm:grid-cols-3">
-          {about.stats.map((stat, i) => (
-            <Reveal
-              key={stat.label}
-              delay={0.1 * i}
-              className="bg-ink-850/60 px-8 py-10 text-center backdrop-blur"
-            >
-              <p className="font-display text-5xl font-bold text-metal sm:text-6xl">
-                <CountUp to={stat.value} suffix={stat.suffix} />
-              </p>
-              <p className="mt-3 text-sm uppercase tracking-wider text-silver-400">{stat.label}</p>
-            </Reveal>
-          ))}
         </div>
       </div>
     </section>

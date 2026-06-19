@@ -63,11 +63,6 @@ export const about = {
   // Swap for a workshop / technician-at-work photo.
   image: "/images/projects/about.png",
   imageAlt: "NB Sprays technician carefully refinishing a vehicle panel",
-  stats: [
-    { value: 2500, suffix: "+", label: "Vehicles Repaired" },
-    { value: 15, suffix: "+", label: "Years Experience" },
-    { value: 100, suffix: "%", label: "Customer Satisfaction" },
-  ],
 };
 
 /* ---------- SERVICES ---------- */
